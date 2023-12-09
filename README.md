@@ -1,4 +1,4 @@
-# Hypo-Dense-Region-Segmentation
+# Hypo Dense Region Extraaction
 ## Problem Statement
 The objective of this hackathon challenge is to develop a robust and efficient algorithm or AI model capable of accurately segmenting the hypodense region from Brain Non-Contrast Computed Tomography (NCCT) images, regardless of the slice thickness and orientation of the images. The primary goal is to automate and streamline the identification of early ischemic changes in acute stroke patients.
 
