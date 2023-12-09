@@ -49,7 +49,7 @@ Following the training phase, the subsequent crucial step involves testing. In t
 
 #### Prediction
 `For prediction you need to check the file `Training-Testing.ipynb` file and give the path of a 3D .nii.gz Image file and also change the path acc to your system.`<br>
--`Note: - I have utilized the dimensions (128,128,28) on Training Time and at Prediction Time just to check how the model works with different shapes we have the shape (128,128,40)`
+-`Note: - I have utilized the dimensions (128,128,28) on Training Time and at Prediction Time just to check how the model works with different shapes we have the shape (128,128,40) and also in when I processed nifti files with 28 slices each that was containing less data that why the there were less slices with mask that is one more reason to choose these shape after further preprocessing`
 
 ![output](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/assets/91930911/109e621a-0b98-4f7e-aaf8-b4b4bf42958d)
 
