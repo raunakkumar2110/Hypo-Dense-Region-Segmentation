@@ -1,0 +1,10 @@
+Epoch_loss: 0.5123
+Epoch_metric: 0.4877
+val_loss_epoch: 0.5166
+val_dice_epoch: 0.4834
+current epoch: 30 current mean dice: 0.4802
+best mean dice: 0.4933 at epoch: 7
+train completed, best_metric: 0.4933 at epoch: 7
+
+
+Average Dice score: 0.25190552519666287
