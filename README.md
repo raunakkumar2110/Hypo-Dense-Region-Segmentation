@@ -53,7 +53,7 @@ Following the training phase, the subsequent crucial step involves testing. In t
 
 ![output](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/assets/91930911/109e621a-0b98-4f7e-aaf8-b4b4bf42958d)
 
-
+.gif -- > Click on the above gif to see the slices animation
 
 ## Repository Structure 
 - `requirements.txt`: The Libraries Need to be Installed with Specified Version to Avoid Version Errors.
