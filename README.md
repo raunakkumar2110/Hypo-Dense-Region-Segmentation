@@ -18,7 +18,8 @@ This tailored approach, though constrained by computational availability, effect
 #### Training
 During the training process, we utilized a dataset consisting of `10` original Nifti files paired with an equal number of corresponding mask images (Nifti files). In order to assess the performance of our model, we conducted validation using a separate set of 2 original nifti files along with their respective mask images. After it Following metrics we have achieved:-
 <br>
-- `Training data Metrics (metrics.txt)-- >` https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/metrics.txt
+- `Training data Metrics (metrics.txt)-- >`<br>
+[https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/metrics.txt](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/Model/metrics.txt)
 - `Epoch_loss: 0.5123`
 - `Epoch_metric: 0.4877`
 - `val_loss_epoch: 0.5166`
@@ -29,19 +30,31 @@ During the training process, we utilized a dataset consisting of `10` original N
 
 There is a positive aspect to consider. Expanding the training process across multiple epochs holds the potential for a notable enhancement in accuracy. This prolonged training period would provide the model with a better opportunity to discern the nuanced relationships within the data, subsequently leading to a more adept prediction of masks for the original images. `It's also worth noting that computational resources (`GPU's`), an integral factor in training effectiveness, could have contributed to the limited initial dice score.`
 
+![graph](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/assets/91930911/29ee1cf2-bc9b-4b81-8a58-586a4dbf0e9b)
+
+
 #### Testing
 Following the training phase, the subsequent crucial step involves testing. In this testing phase, we employed a set of 2 original Nifti Volume. The evaluation of our model on this test set yielded the following metrics:
 
 -`Testing results.`
 <br>
--` Testing data Metrics (metrics.txt) Click Here -- >`https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/metrics.txt
+-` Testing data Metrics (metrics.txt) Click Here -- >`<br>
+[https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/metrics.txt](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/Model/metrics.txt)
 - `Average Dice Score: 0.25190552519666287`
-<br>
-##### To Test the model There should be an input image (3D - .nii.gz) and its corresponding Mask image to be passed to the model. Kindly Read carefully the comments in the code for further assistance else there could be a chance of error.`
+
+![prediction](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/assets/91930911/779b7644-9492-4a9f-ad43-089d4824bcf3)
+
+
+### To Test the model There should be an input image (3D - .nii.gz) and its corresponding Mask image to be passed to the model. Kindly Read carefully the comments in the code for further assistance else there could be a chance of error.`
 
 #### Prediction
-`For prediction you need to check the file `Training-Testing.ipynb` file and give the path of a 3D .nii.gz Image file and also change the path acc to your system.`
--`Note: - I have utilized the dimensions `(128,128,28)` on Training Time and at Prediction Time just to check how the model works with different shapes we have the shape `(128,128,40)`
+`For prediction you need to check the file `Training-Testing.ipynb` file and give the path of a 3D .nii.gz Image file and also change the path acc to your system.`<br>
+-`Note: - I have utilized the dimensions (128,128,28) on Training Time and at Prediction Time just to check how the model works with different shapes we have the shape (128,128,40) and also in when I processed nifti files with 28 slices each that was containing less data that why the there were less slices with mask that is one more reason to choose these shape after further preprocessing`
+
+![output](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/assets/91930911/109e621a-0b98-4f7e-aaf8-b4b4bf42958d)
+
+.gif -- > Click on the above gif to see the slices animation
+
 ## Repository Structure 
 - `requirements.txt`: The Libraries Need to be Installed with Specified Version to Avoid Version Errors.
 - `output`: Contains the Graphs, and Predictions.
@@ -49,4 +62,5 @@ Following the training phase, the subsequent crucial step involves testing. In t
 - `Dataset`: Different Training, Testing and Validation nifti files.
 - `Training-Testing.ipynb`: Scripts to Train the Model And Test the Model`
 - `preprocessing.ipynb`: Script for Preprocessing the NCCT.
+
 
