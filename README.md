@@ -41,8 +41,9 @@ Following the training phase, the subsequent crucial step involves testing. In t
 -` Testing data Metrics (metrics.txt) Click Here -- >`<br>
 [https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/metrics.txt](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/blob/main/Model/metrics.txt)
 - `Average Dice Score: 0.25190552519666287`
-<br>
-![prediction](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/assets/91930911/d4e2ff26-109a-4140-a260-ca7874463c98)
+
+![prediction](https://github.com/raunakkumar2110/Hypo-Dense-Region-Segmentation/assets/91930911/779b7644-9492-4a9f-ad43-089d4824bcf3)
+
 
 ### To Test the model There should be an input image (3D - .nii.gz) and its corresponding Mask image to be passed to the model. Kindly Read carefully the comments in the code for further assistance else there could be a chance of error.`
 
